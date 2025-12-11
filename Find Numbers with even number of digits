@@ -1,0 +1,11 @@
+class Solution:
+    def findNumbers(self, nums):
+        count = 0
+        for n in nums:
+            if len(str(n)) % 2 == 0:
+                count += 1
+        return count
+
+nums = list(map(int, input().split()))
+s = Solution()
+print(s.findNumbers(nums))
